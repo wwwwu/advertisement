@@ -1,0 +1,431 @@
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+.header__nav a:link,
+.header__nav a:visited{
+    color:white;
+}
+.header{
+    width:100%;
+    color:#fff;
+    height:80px;
+    position:fixed;
+    margin:0 auto;
+    z-index:9;
+    background:rgba(0,0,0,0.3);
+}
+.header__logo{
+    width:150px;
+    background:url("../图片素材/img/广告.svg") left center no-repeat;
+    background-size:38px 38px;
+    height:80px;
+    position:absolute;
+    top:50%;
+    margin-top:-40px;
+    line-height:80px;
+    text-indent:50px;
+    left:10px;
+}
+.header__logo:hover{
+    cursor:pointer;
+    color:rgb(160, 157, 157);
+}
+
+.header__nav{
+    position:absolute;
+    height:40px;
+    right:30px;
+    top:50%;
+    margin-top:-20px;
+}
+.header__nav-item_active{
+    color:red!important;
+}
+.header__nav-item{
+    width:90px;
+    height:40px;
+    display:block;
+    float:left;
+    font-size:13px;
+    text-align:center;
+    line-height:40px;
+}
+.header__nav-item_button{
+    background:red;
+    border-radius:5px;
+}
+.header__nav-item_button:hover{
+    background:rgb(163, 5, 5);
+}
+/* .header__nav-item_active::after{
+    content:"";
+    display:block;
+    width:60%;
+    height:2px;
+    background:red;
+    margin:0 auto;
+} */
+.header__nav-tip{
+    position: absolute;
+	width: 50px;
+	margin-left: 20px;
+	height: 2px;
+	background: #f00;
+	left: 0;
+	bottom: 0;
+	transition:  all .5s;
+}
+
+.screen-1{
+    width:100%;
+    height:640px;
+    background:url("../图片素材/img/sc1.jpg") no-repeat;
+    background-size:cover;
+    position:relative;
+    text-align: center;
+    color:white;
+}
+.screen-1__h1{
+    padding-top:250px;
+}
+.screen-1__h2{
+    padding-top:10px;
+    padding-left:5px;
+    font-weight:normal;
+    padding-bottom:30px;
+}
+
+button, button::after{
+    margin:0 auto;
+    width:380px;
+    height:86px;
+    font-size:36px;
+    font-family:'Bebas Neue', cursive;
+    background:linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border:0;
+    color:#fff;
+    letter-spacing:3px;
+    line-height:88px;
+    box-shadow:6px 0px 0px #00E6F6;
+    outline:transparent;
+    position:relative;
+}
+button::after{
+    --slice-0:inset(50% 50% 50% 50%);
+    --slice-1:inset(80% -6px 0 0);
+    --slice-2:inset(50% -6px 30% 0);
+    --slice-3:inset(10% -6px 85% 0);
+    --slice-4:inset(40% -6px 43% 0);
+    --slice-5:inset(80% -6px 5% 0);
+    content:'AVAILABLE NOW';
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background:linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow:-3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path:var(--slice-0);
+}
+
+.screen-2{
+    width:100%;
+    height:640px;
+    background:url("../图片素材/img/sc2.png") bottom center no-repeat;
+    background-size:50% 46%;
+    text-align: center;
+    position:relative;
+    z-index:1;
+}
+.screen-2__h1{
+    padding-top:100px;
+}
+.screen-2__h1::after{
+    content:"";
+    display: block;
+    background:red;
+    width:40px;
+    height:2px;
+    margin:0 auto;
+    margin-top:16px;
+    margin-bottom:13px;
+}
+.screen-2__h2{
+    font-weight: normal;
+    
+}
+.screen-2__pt1{
+    width:300px;
+    height:600px;
+    background:url("../图片素材/img/sc2-1.png") center center no-repeat;
+    background-size:80% 55%;
+    position: relative;
+    margin:0 auto;
+    z-index:3;
+    margin-top:-38px;
+}
+.screen-2__pt2{
+    width:266px;
+    height:285px;
+    background:url("../图片素材/img/sc2-2.png") center center no-repeat;
+    background-size:80% 60%;
+    z-index:2;
+    position:absolute;
+    top:335px;
+    left:550px;
+}
+
+.screen-3{
+    width:100%;
+    height:640px;
+    background: #293134;
+    color:white;
+    position:relative;
+}
+.screen-3__h1{
+    position:absolute;
+    top:200px;
+    left:700px;
+}
+.screen-3__h1::after{
+    content:"";
+    display:block;
+    background:red;
+    width:40px;
+    height:2px;
+    margin-top:18px;
+}
+.screen-3__h2{
+    position:absolute;
+    top:270px;
+    left:700px;
+    font-weight: normal;
+}
+.screen-3__nav{
+    position:absolute;
+    top:480px;
+    left:700px;
+}
+.screen-3__nav-item{
+    float:left;
+    font-size:13px;
+    border-radius:50%;
+    width:56px;
+    height:56px;
+    text-align: center;
+    line-height: 56px;
+    margin-right:28px;
+}
+.screen-3__nav-item_1{
+    border:4px solid rgba(66, 167, 210, .3);
+    color:#46B3E1;
+}
+.screen-3__nav-item_2{
+    border:4px solid rgba(131, 86, 219, .3);
+    color:#6D50E2;
+}
+.screen-3__nav-item_3{
+    border:4px solid rgba(234, 68, 12, .3);
+    color:#EA440C;
+}
+.screen-3__nav-item_4{
+    border:4px solid rgba(12, 234, 230, .3);
+    color:rgba(12, 234, 230, .8);
+}
+.screen-3__nav-item_5{
+    border:4px solid rgba(158, 242, 63, .3);
+    color:rgba(158, 242, 63, .8);
+}
+.screen-3__pt1{
+    position:absolute;
+    left:-70px;
+    background:url("../图片素材/img/sc3.png") center center no-repeat;
+    background-size:70% 70%;
+    width:640px;
+    height:640px;
+}
+
+.screen-4{
+    width:100%;
+    height:640px;
+    position:relative;
+    margin:0 auto;
+}
+.screen-4__h1{
+    text-align:center;
+    padding-top:80px;
+}
+.screen-4__h1::after{
+    content:"";
+    display:block;
+    background:red;
+    width:40px;
+    height:2px;
+    margin:0 auto;
+    margin-top:18px;
+}
+.screen-4__h2{
+    text-align:center;
+    font-weight:normal;
+    padding-top:16px;
+}
+.screen-4__features{
+    position:absolute;
+    width:1000px;
+    left:50%;
+    margin-left:-400px;
+    top:45%;
+}
+.screen-4__features-item{
+    float:left;
+    margin-right:90px;
+}
+.screen-4__features-pic{
+    width:60px;
+    height:60px;
+    margin-left:28px;
+    padding-bottom:40px;
+}
+.screen-4__features-pic1{
+    background:url("../图片素材/img/sc4-1.png") center center no-repeat;
+    background-size:contain;
+    margin-left:40px;
+}
+.screen-4__features-pic2{
+    background:url("../图片素材/img/sc4-2.png") center center no-repeat;
+    background-size:contain;
+}
+.screen-4__features-pic3{
+    background:url("../图片素材/img/sc4-3.png") center center no-repeat;
+    background-size:contain;
+}
+.screen-4__features-pic4{
+    background:url("../图片素材/img/sc4-4.png") center center no-repeat;
+    background-size:contain;
+    margin-left:40px;
+}
+
+.screen-5{
+    width:100%;
+    height:640px;
+    background:url("../图片素材/img/sc5.jpg") no-repeat;
+    position:relative;
+    color:white;
+}
+.screen-5__pic{
+    background:url("../图片素材/img/sc5-1.png") center center no-repeat;
+    width:300px;
+    height:300px;
+    position:absolute;
+    left:50%;
+    margin-left:-130px;
+    top:50px;
+}
+.screen-5__h1{
+    position:absolute;
+    top:340px;
+    left:450px;
+}
+.screen-5__h1::after{
+    content:"";
+    display:block;
+    background:white;
+    width:40px;
+    height:2px;
+    margin:0 auto;
+    margin-top:14px;
+}
+.screen-5__h2{
+    position:absolute;
+    top:420px;
+    left:340px;
+    font-weight: normal;
+}
+.screen-6{
+    width:100%;
+    height:180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen-6__button{
+    
+    text-align:center;
+    color:black;
+    border:1px solid black;
+    border-radius:3px;
+    width:200px;
+    height:50px;
+    line-height:50px;
+}
+.screen-6__button:hover{
+    color:red;
+    cursor:pointer;
+}
+.footer{
+    width:100%;
+    height:100px;
+    background:black;
+    text-align:center;
+
+}
+.footer__nav{
+    padding-top:20px;
+}
+.footer__nav a:hover{
+    cursor:pointer;
+    color:red;
+}
+.footer__nav a{
+    color:rgb(204, 202, 202);
+}
+.footer-item{
+    padding-left:28px;
+    font-size:12px;
+}
+.footer__txt{
+    padding-top:8px;
+    font-size:13px;
+    color:rgb(124, 124, 124);
+}
+.outline{
+    position: fixed;
+    padding: 5px 10px;
+    bottom: 120px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px 0px rgba(7, 17, 27, 0.1);
+    z-index: 3;
+    transform: translate(100%, 0);
+    transition: all 1s
+}
+.outline_status_in{
+    transform: translate(0, 0);
+}
+
+.outline__item {
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 0;
+    background: rgb(255,255,255);
+    margin: 5px 0px 0px;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.outline a:link,
+.outline a:visited{
+    color:black;
+}
+.outline a:hover{
+    color:red;
+}
+.outline a .outline__item_active{
+    color:red!important;
+}
